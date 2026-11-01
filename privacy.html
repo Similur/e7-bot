@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — E7 Fribbels & Smilegate Update Bot</title>
+  <style>
+    :root {
+      --bg: #161822;
+      --panel: #202330;
+      --border: #30354a;
+      --accent: #5865f2;
+      --gold: #f5c242;
+      --text: #f0f2f8;
+      --muted: #a0a8bc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 840px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+    .nav {
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+    .nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 16px;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: var(--gold);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    h2 {
+      color: var(--text);
+      font-size: 1.25rem;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      color: var(--muted);
+    }
+    ul {
+      padding-left: 22px;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <a href="./index.html">&larr; Home</a>
+      <a href="./terms.html">Terms of Service</a>
+    </div>
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <div class="meta">Last Updated: October 31, 2026</div>
+
+      <p>
+        This Privacy Policy explains what information the <strong>E7 Fribbels &amp; Smilegate Update Bot</strong> ("the Bot") collects, how it is stored, and how it is used when you interact with the Bot on Discord.
+      </p>
+
+      <h2>1. Information We Collect and Store</h2>
+      <p>
+        The Bot only stores data that is explicitly provided by users or server administrators through slash commands:
+      </p>
+      <ul>
+        <li>
+          <strong>Server Update Feed Subscriptions (<code>/feed subscribe</code>):</strong>
+          Stores your Discord Server ID (<code>guild_id</code>), Target Channel ID (<code>channel_id</code>), optional Role ID for pings (<code>role_mention_id</code>), and the subscribed RSS/feed URL so the Bot knows where to deliver update announcements.
+        </li>
+        <li>
+          <strong>Shared Character Builds (<code>/build share</code>):</strong>
+          Stores your Discord User ID (<code>user_id</code>), Display Name, Server ID, and the Epic Seven hero build details you submit (hero name, sets, artifact, in-game stats, optional notes, and optional screenshot attachment URL).
+        </li>
+        <li>
+          <strong>Shared Battle Replays (<code>/replay share</code>):</strong>
+          Stores your Discord User ID (<code>user_id</code>), Display Name, Server ID, match metadata (title, mode, win/loss result, rank tier, hero drafts, MVP hero, notes), and the media/video URL you attach or provide.
+        </li>
+      </ul>
+
+      <h2>2. Information We Do NOT Collect</h2>
+      <ul>
+        <li>We do <strong>not</strong> log, store, or read private messages or general chat history in your server.</li>
+        <li>We do <strong>not</strong> collect personal identifying information outside of public Discord identifiers (User ID, Display Name, Guild ID, Channel ID) required for command functionality.</li>
+        <li>We do <strong>not</strong> sell, rent, or share any stored data with third parties or advertisers.</li>
+      </ul>
+
+      <h2>3. Data Retention &amp; Deletion</h2>
+      <p>
+        Data submitted via <code>/build share</code>, <code>/replay share</code>, and <code>/feed subscribe</code> is stored in the Bot's local SQLite database for as long as needed to provide those features:
+      </p>
+      <ul>
+        <li>Server administrators can remove update feed subscriptions at any time using <code>/feed unsubscribe</code>.</li>
+        <li>Users can overwrite their saved hero build at any time by running <code>/build share</code> for that hero, or request complete removal of their saved builds/replays by contacting the Bot administrator.</li>
+      </ul>
+
+      <h2>4. Third-Party Services</h2>
+      <p>
+        When you run commands like <code>/fribbels</code> or <code>/feed</code>, the Bot makes outbound requests to public endpoints (such as the Fribbels Epic Seven Hero Library API and Smilegate/Steam news feeds) to retrieve game data. No personal Discord user data is transmitted to those services.
+      </p>
+
+      <h2>5. Contact &amp; Data Removal Requests</h2>
+      <p>
+        If you have any questions about this Privacy Policy or wish to request deletion of your stored builds or replays, please contact the Bot owner via Discord in the support server where the Bot is hosted.
+      </p>
+
+      <footer>
+        E7 Fribbels &amp; Smilegate Update Bot &bull; <a href="./terms.html" style="color: var(--accent);">Terms of Service</a>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
